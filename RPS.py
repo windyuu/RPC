@@ -1,7 +1,7 @@
 import random
 while True:
 	pdf = input("どれか選んでね (R, P, S) 終了するときは(e)")
-	tsp = random.choice(["R","P","S"])
+	tsp = random.select(["R","P","S"])
 	if pdf == tsp:
 		print ("あいこ")
 	elif (pdf == "R" and tsp == "P") or (pdf == "P" and tsp == "S") or (pdf == "S" and tsp == "R"):
